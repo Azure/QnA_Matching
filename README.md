@@ -1,11 +1,11 @@
 # QnA Matching Data Science Scenario
 
-- [Overview](#Overview)
-- [Goal](#Goal)
-- [Description](#Description)
-- [Contact](#Contact)
+- [Overview](#overview)
+- [Goal](#goal)
+- [Description](#description)
+- [Contact](#contact)
 
-## Overview
+## <a name="overview"></a>Overview
 
 Question answering systems of specific topics are highly demanded but are not quite available yet. The common use cases we see in this type of scenario include but are not limited to:
 * Live chat support
@@ -14,14 +14,14 @@ Question answering systems of specific topics are highly demanded but are not qu
 
 Therefore, we have provided a series of 7 Notebooks with step-by-step descriptions of how to create various training methods to match the correct answer to a given question.
 
-## Goal
+## <a name="goal"></a>Goal
 
 * Provide our feedback to the product/engineering team about how a data scientist would solve the question answering problem.
 * Reveal the journey and steps in details.
 * Reveal the reasons and results of different training methods.
 * Provide working code for testing new products.
 
-## Description
+## <a name="description"></a>Description
 
 The series include 7 Notebooks, which provide working code for each step of our Data Science process.
 
@@ -37,6 +37,6 @@ Also, we have implemented several training methods in the notebooks titled __Par
 
 Note: This notebook series are built under Python 3.5 and NLTK 3.2.2.
 
-## Contact
+## <a name="contact"></a>Contact
 
 Please feel free to contact Katherine Zhao (mez@microsoft.com) and T.J. Hazen (TJ.Hazen@microsoft.com) with any question or comment.
