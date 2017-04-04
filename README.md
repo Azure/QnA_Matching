@@ -26,13 +26,28 @@ Therefore, we have provided a series of 7 Notebooks with step-by-step descriptio
 We use three sets of data in this series of notebooks. We collect the raw data from the Stack Overflow Database and extract all question-answer pairs related to the __"JavaScript"__ tag. For the question-answer pairs, we consider the following scenarios.
 
 1. Original Questions (Q): These questions have been asked and answered on the Stack Overflow.
-2. Duplications (D): There is a linkage among the questions. Some questions that have already been asked by others are linked to the previous/original questions as Duplications. In the Stack Overflow Database, this kind of linkage is determined by "LINK_TYPE_DUPE = 3". Each original question could have 0 to many duplications.
+2. Duplications (D): There is a linkage among the questions. Some questions that have already been asked by others are linked to the previous/original questions as Duplications. In the Stack Overflow Database, this kind of linkage is determined by "LINK_TYPE_DUPE = 3". Each original question could have 0 to many duplications, which are considered as semantically equivalent to the original question.
 3. Answers (A): For each Original question and its Duplications, we have found more than one answers have solved that question. In our analysis, we only select the Accepted answer or the answer with the highest score that solved the Original question. Therefore, it's 1-to-1 mapping between Original questions and Answers and many-to-1 mapping between Duplications and Original questions. Each Original question and its Duplications have an unique AnswerId.
-4. Function Words: we consider a list of words that can only be used in between content words in the creation of phrases. This list of words is also used as Stop Words.
+4. Function Words: we consider a list of words that can only be used in between content words in the creation of phrases. This list of words, stored as a .txt file, is also used as Stop Words.
 
 See the below Data Diagram to illustrate the relationship among Original Questions (Q), Duplications (D) and Answers (A):
 
 <img src="https://raw.githubusercontent.com/Azure/Document_Matching/master/pic/data_diagram.png">
+
+The data schema is:
+
+Dataset | Column Name | Description
+----------|------------|--------
+questions | Id | the unique question ID (primary key)
+ | AnswerId | the unique answer ID per question
+ | Text0 | the raw text data including the question's title and body
+ | CreationDate | the timestamp of when the question has been asked
+ dupes | Id | the unique duplication ID (primary key)
+ | AnswerId | the answer ID associated with the duplication
+ | Text0 | the raw text data including the duplication's title and body
+ | CreationDate | the timestamp of when the duplication has been asked
+ answers | Id | the unique answer ID (primary key)
+ | text0 | the raw text data of the answer
 
 ## <a name="description"></a>Description
 
