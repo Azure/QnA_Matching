@@ -23,6 +23,7 @@ Therefore, we have provided a series of 7 Notebooks with step-by-step descriptio
 * Provide working code for testing new products.
 
 ## <a name="data"></a>Data
+
 We use three sets of data in this series of notebooks. We collect the raw data from the Stack Overflow Database and extract all question-answer pairs related to the __"JavaScript"__ tag. For the question-answer pairs, we consider the following scenarios.
 
 1. Original Questions (Q): These questions have been asked and answered on the Stack Overflow.
@@ -34,20 +35,22 @@ See the below Data Diagram to illustrate the relationship among Original Questio
 
 <img src="https://raw.githubusercontent.com/Azure/Document_Matching/master/pic/data_diagram.png">
 
-The data schema is:
+The data schema and download links are available as below:
 
 | Dataset | Column Name | Description
 | ----------|------------|--------
-| questions | Id | the unique question ID (primary key)
+| [questions](https://mezsa.blob.core.windows.net/stackoverflow/orig-q.tsv.gz) | Id | the unique question ID (primary key)
 |  | AnswerId | the unique answer ID per question
 |  | Text0 | the raw text data including the question's title and body
 |  | CreationDate | the timestamp of when the question has been asked
-| dupes | Id | the unique duplication ID (primary key)
+| [dupes](https://mezsa.blob.core.windows.net/stackoverflow/dup-q.tsv.gz) | Id | the unique duplication ID (primary key)
 |  | AnswerId | the answer ID associated with the duplication
 |  | Text0 | the raw text data including the duplication's title and body
 |  | CreationDate | the timestamp of when the duplication has been asked
-| answers | Id | the unique answer ID (primary key)
+| [answers](https://mezsa.blob.core.windows.net/stackoverflow/ans.tsv.gz)  | Id | the unique answer ID (primary key)
 |  | text0 | the raw text data of the answer
+
+To retrieve the data in Python, please find the code in the section _Access sample data_ of the __Part 1__ notebook.
 
 ## <a name="description"></a>Description
 
