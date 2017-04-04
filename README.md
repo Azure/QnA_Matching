@@ -36,18 +36,18 @@ See the below Data Diagram to illustrate the relationship among Original Questio
 
 The data schema is:
 
-Dataset | Column Name | Description
-----------|------------|--------
-questions | Id | the unique question ID (primary key)
- | AnswerId | the unique answer ID per question
- | Text0 | the raw text data including the question's title and body
- | CreationDate | the timestamp of when the question has been asked
-dupes | Id | the unique duplication ID (primary key)
-| AnswerId | the answer ID associated with the duplication
-| Text0 | the raw text data including the duplication's title and body
-| CreationDate | the timestamp of when the duplication has been asked
-answers | Id | the unique answer ID (primary key)
-| text0 | the raw text data of the answer
+| Dataset | Column Name | Description
+| ----------|------------|--------
+| questions | Id | the unique question ID (primary key)
+|  | AnswerId | the unique answer ID per question
+|  | Text0 | the raw text data including the question's title and body
+|  | CreationDate | the timestamp of when the question has been asked
+| dupes | Id | the unique duplication ID (primary key)
+|  | AnswerId | the answer ID associated with the duplication
+|  | Text0 | the raw text data including the duplication's title and body
+|  | CreationDate | the timestamp of when the duplication has been asked
+| answers | Id | the unique answer ID (primary key)
+|  | text0 | the raw text data of the answer
 
 ## <a name="description"></a>Description
 
