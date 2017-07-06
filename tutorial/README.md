@@ -68,7 +68,7 @@ __02_Phrase Learning, Model Training & Evaluation__ takes two _.tsv_ files (one 
 * _AnswerId_: contains the answer ID that the question belongs to.
 * _Text_: contains the text in your questions.
 
-Once your data is prepared with the above format, you can modify the _trainQ_url_ and _testQ_url_ in the code to the path of your training and test set, respectively. The remaining code should be directly applicable.
+Once your data is prepared in the above format, you can modify the _trainQ_url_ and _testQ_url_ in the code to the path of your training and test set, respectively. The remaining code should be directly applicable.
 
 
 ## <a name="contact"></a>Contact
