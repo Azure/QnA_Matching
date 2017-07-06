@@ -49,7 +49,7 @@ To retrieve the data in Python, please find the code in the section _Access samp
 
 ## <a name="description"></a>Description
 
-The tutorial include 2 notebooks, which provide working code for each step of our Data Science process.
+The tutorial includes 2 notebooks, which provide working code for each step of our Data Science process.
 
 __01_Prepare Train and Test Data__ shows how to pre-process and prepare the train & test data from these specific datasets.
 
