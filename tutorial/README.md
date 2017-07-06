@@ -64,11 +64,11 @@ For someone wants to apply this tutorial on your own datasets, you can skip the 
 
 __02_Phrase Learning, Model Training & Evaluation__ takes two _.tsv_ files (one for training and one for test) as inputs. In order to re-use the code, you need to prepare your train and test data to contain three columns _Id_, _AnswerId_ and _Text_.
 
-* _Id_: represents the unique question ID.
-* _AnswerId_: represents the answer ID that the question belongs to.
+* _Id_: contains the unique question ID.
+* _AnswerId_: contains the answer ID that the question belongs to.
 * _Text_: contains the text in your questions.
 
-Once your data is prepared with the above format, you can modify the _trainQ_url_ and _testQ_url_ in the script to the path of your training and test set, respectively. The remaining script should be directly applicable.
+Once your data is prepared with the above format, you can modify the _trainQ_url_ and _testQ_url_ in the code to the path of your training and test set, respectively. The remaining code should be directly applicable.
 
 
 ## <a name="contact"></a>Contact
